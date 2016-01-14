@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BoardCover", "BoardCover\BoardCover.vcxproj", "{64D38950-60B7-4FFA-84BE-AEFDD2477328}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Picnic", "Picnic\Picnic.vcxproj", "{3BBC3CAE-D9BE-446B-9B7A-67A7C07F60D4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Practice", "Practice\Practice.vcxproj", "{76091BF8-AEC0-4BB4-B7F3-787998D8808E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64D38950-60B7-4FFA-84BE-AEFDD2477328}.Debug|Win32.ActiveCfg = Debug|Win32
+		{64D38950-60B7-4FFA-84BE-AEFDD2477328}.Debug|Win32.Build.0 = Debug|Win32
+		{64D38950-60B7-4FFA-84BE-AEFDD2477328}.Release|Win32.ActiveCfg = Release|Win32
+		{64D38950-60B7-4FFA-84BE-AEFDD2477328}.Release|Win32.Build.0 = Release|Win32
+		{3BBC3CAE-D9BE-446B-9B7A-67A7C07F60D4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3BBC3CAE-D9BE-446B-9B7A-67A7C07F60D4}.Debug|Win32.Build.0 = Debug|Win32
+		{3BBC3CAE-D9BE-446B-9B7A-67A7C07F60D4}.Release|Win32.ActiveCfg = Release|Win32
+		{3BBC3CAE-D9BE-446B-9B7A-67A7C07F60D4}.Release|Win32.Build.0 = Release|Win32
+		{76091BF8-AEC0-4BB4-B7F3-787998D8808E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{76091BF8-AEC0-4BB4-B7F3-787998D8808E}.Debug|Win32.Build.0 = Debug|Win32
+		{76091BF8-AEC0-4BB4-B7F3-787998D8808E}.Release|Win32.ActiveCfg = Release|Win32
+		{76091BF8-AEC0-4BB4-B7F3-787998D8808E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
