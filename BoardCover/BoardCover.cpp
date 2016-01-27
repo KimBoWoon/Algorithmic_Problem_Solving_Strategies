@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <string.h>
+#include <cstdio>
+#include <cstdlib>
 using namespace std;
 
 #pragma warning(disable:4996)
@@ -62,7 +64,7 @@ int main() {
 
 	freopen("input.txt", "r", stdin);
 
-	scanf("%d", &testCase);
+	cin >> testCase;
 
 	while (testCase--) {
 		int x, y, cnt = 0;
@@ -70,7 +72,7 @@ int main() {
 		vector<vector<int> > board;
 		board.assign(MAX_SIZE, vector<int>(MAX_SIZE, 1));
 
-		scanf("%d %d", &x, &y);
+		cin >> x >> y;
 
 		for (int i = 0; i < x; ++i) {
 			for (int j = 0; j < y; ++j) {
