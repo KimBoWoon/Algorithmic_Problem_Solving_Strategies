@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <Windows.h>
 
 #pragma warning(disable:4996)
 
@@ -55,9 +54,6 @@ int countPairings(int n, int taken[10]) {
 
 int main() {
 	int testCase;
-	LARGE_INTEGER start, end, frequency;
-
-	QueryPerformanceFrequency(&frequency);
 
 	freopen("input.txt", "r", stdin);
 
@@ -67,7 +63,6 @@ int main() {
 		int taken[10];
 		int i, n, m;
 
-		QueryPerformanceCounter(&start);
 		scanf("%d %d", &n, &m);
 
 		memset(areFriends, 0, sizeof(int) * 10 * 10);
@@ -80,8 +75,5 @@ int main() {
 			areFriends[b][a] = 1;
 		}
 		printf("%d\n", countPairings(n, taken));
-		QueryPerformanceCounter(&end);
-
-		printf("Time : %f\n", ((double)end.QuadPart - (double)start.QuadPart) / (double)frequency.QuadPart);
 	}
 }

@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <Windows.h>
 
 #pragma warning(disable:4996)
 
@@ -61,9 +60,6 @@ int cover(int board[MAX_SIZE][MAX_SIZE], int row, int col) {
 
 int main() {
 	int testCase;
-	LARGE_INTEGER start, end, frequency;
-
-	QueryPerformanceFrequency(&frequency);
 
 	freopen("input.txt", "r", stdin);
 
@@ -87,11 +83,6 @@ int main() {
 					board[i][j] = 0;
 			}
 		}
-
-		QueryPerformanceCounter(&start);
 		cover(board, x, y);
-		QueryPerformanceCounter(&end);
-
-		printf("Time : %f\n", ((double)end.QuadPart - (double)start.QuadPart) / (double)frequency.QuadPart);
 	}
 }

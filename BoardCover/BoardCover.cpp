@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <string.h>
-//#include <Windows.h>
 using namespace std;
 
 #pragma warning(disable:4996)
@@ -60,9 +59,6 @@ int cover(vector<vector<int> >& board) {
 
 int main() {
 	int testCase;
-	//LARGE_INTEGER start, end, frequency;
-
-	//QueryPerformanceFrequency(&frequency);
 
 	freopen("input.txt", "r", stdin);
 
@@ -88,14 +84,9 @@ int main() {
 				}
 			}
 		}
-
-		//QueryPerformanceCounter(&start);
 		if (cnt % 3 == 0)
 			cout << cover(board) << endl;
 		else
 			cout << 0 << endl;
-		//QueryPerformanceCounter(&end);
-
-		//printf("Time : %f\n", ((double)end.QuadPart - (double)start.QuadPart) / (double)frequency.QuadPart);
 	}
 }
