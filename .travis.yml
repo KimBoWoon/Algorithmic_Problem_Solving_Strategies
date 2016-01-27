@@ -1,10 +1,12 @@
-language: c, cpp
+language:
+  - c
+  - cpp
 
 compiler:
   - gcc
   - g++
 
 script: 
-  - gcc -o test ./Picnic/Picnic.c
-  - gcc -o test ./BoardCover/BoardCover.c
-  - g++ -o test ./Practice/Practice.cpp
+  - gcc -o a ./Picnic/Picnic.c
+  - gcc -o b ./BoardCover/BoardCover.c
+  - g++ -o c ./Practice/Practice.cpp
