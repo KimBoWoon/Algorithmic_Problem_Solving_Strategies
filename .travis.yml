@@ -1,0 +1,7 @@
+language: c
+
+compiler: gcc
+
+script: 
+  - gcc -o test /Picnic/Picnic.c
+  - gcc -o test /BoardCover/BoardCover.c
