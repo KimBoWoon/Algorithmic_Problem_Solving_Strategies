@@ -9,4 +9,5 @@ compiler:
 script: 
   - gcc -o a ./Picnic/Picnic.c
   - gcc -o b ./BoardCover/BoardCover.c
-  - g++ -o c ./Practice/Practice.cpp
+  - g++ -o c ./BoardCover/BoardCover.cpp
+  - g++ -o d ./Practice/Practice.cpp
