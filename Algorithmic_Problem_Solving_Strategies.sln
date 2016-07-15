@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Picnic", "Picnic\Picnic.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Practice", "Practice\Practice.vcxproj", "{76091BF8-AEC0-4BB4-B7F3-787998D8808E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Boggle", "Boggle\Boggle.vcxproj", "{001C1C29-15DF-45BC-BC7D-BE85137D5A2B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -27,6 +29,10 @@ Global
 		{76091BF8-AEC0-4BB4-B7F3-787998D8808E}.Debug|Win32.Build.0 = Debug|Win32
 		{76091BF8-AEC0-4BB4-B7F3-787998D8808E}.Release|Win32.ActiveCfg = Release|Win32
 		{76091BF8-AEC0-4BB4-B7F3-787998D8808E}.Release|Win32.Build.0 = Release|Win32
+		{001C1C29-15DF-45BC-BC7D-BE85137D5A2B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{001C1C29-15DF-45BC-BC7D-BE85137D5A2B}.Debug|Win32.Build.0 = Debug|Win32
+		{001C1C29-15DF-45BC-BC7D-BE85137D5A2B}.Release|Win32.ActiveCfg = Release|Win32
+		{001C1C29-15DF-45BC-BC7D-BE85137D5A2B}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
