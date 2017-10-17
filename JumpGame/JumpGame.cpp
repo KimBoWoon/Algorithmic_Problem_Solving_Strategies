@@ -3,7 +3,7 @@
 //#include <Windows.h>
 using namespace std;
 
-//#pragma warning(disable:4996)
+#pragma warning(disable:4996)
 
 int n, board[101][101];
 int cache[101][101];
@@ -40,7 +40,7 @@ int jump2(int y, int x) {
 int main() {
 	int testCase;
 
-	//freopen("input.txt", "r", stdin);
+	freopen("input.txt", "r", stdin);
 
 	cin >> testCase;
 
