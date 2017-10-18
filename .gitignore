@@ -29,3 +29,6 @@
 
 # Opensdf
 *.opensdf
+
+# vs
+.vs/*

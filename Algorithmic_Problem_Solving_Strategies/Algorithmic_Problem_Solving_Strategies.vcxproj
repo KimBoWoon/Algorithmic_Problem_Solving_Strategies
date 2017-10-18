@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{BBFE84C2-FA9B-4639-9BAD-D85501AA9F65}</ProjectGuid>
+    <ProjectGuid>{B9379655-53EC-4747-B2E0-426F01A81204}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Quadtree</RootNamespace>
+    <RootNamespace>Algorithmic_Problem_Solving_Strategies</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
