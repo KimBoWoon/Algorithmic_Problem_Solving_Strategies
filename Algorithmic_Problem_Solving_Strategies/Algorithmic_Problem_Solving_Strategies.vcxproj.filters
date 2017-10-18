@@ -20,7 +20,7 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Fence.cpp">
+    <ClCompile Include="Fanmeeting.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
