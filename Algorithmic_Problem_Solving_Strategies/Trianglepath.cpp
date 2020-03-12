@@ -3,8 +3,6 @@
 #include <algorithm>
 using namespace std;
 
-#pragma warning(disable: 4996)
-
 #define MAX_NUMBER 100
 
 int testCase, n, maxSum;
@@ -41,6 +39,21 @@ int path2(int y, int x) {
 	return ret = max(path2(y + 1, x), path2(y + 1, x + 1)) + triangle[y][x];
 }
 
+int bottomUp(int x, int y) {
+	for (int i = 1; i < n; i++) {
+		for (int j = 0; j <= i; j++) {
+			cache[i][j] = triangle[i][j] + max(cache[i - 1][j], cache[i - 1][j - 1]);
+		}
+	}
+
+	int answer = 0;
+	for (int i = 0; i < n; i++) {
+		answer = max(answer, cache[n - 1][i]);
+	}
+	
+	return answer;
+}
+
 int main() {
 	scanf("%d", &testCase);
 
@@ -57,22 +70,24 @@ int main() {
 			}
 		}
 
-		//printf("%d\n", path1(0, 0, 0));
-		printf("%d\n", path2(0, 0));
+		// printf("%d\n", path1(0, 0, 0));
+		// printf("%d\n", path2(0, 0));
+		cache[0][0] = triangle[0][0];
+		printf("%d\n", bottomUp(0, 0));
 
-		////cache[0][0] = max(triangle[0][0] + triangle[1][0], triangle[0][0] + triangle[1][1]);
-		//cache[0][0] = triangle[0][0];
-		//for (int i = 1; i < n; i++) {
-		//	for (int j = 0; j < i + 1; j++) {
-		//		cache[i][j] = max(cache[i - 1][j] + triangle[i][j], cache[i - 1][j] + triangle[i][j + 1]);
-		//	}
-		//}
+		// cache[0][0] = max(triangle[0][0] + triangle[1][0], triangle[0][0] + triangle[1][1]);
+		// cache[0][0] = triangle[0][0];
+		// for (int i = 1; i < n; i++) {
+		// 	for (int j = 0; j < i + 1; j++) {
+		// 		cache[i][j] = max(cache[i - 1][j] + triangle[i][j], cache[i - 1][j] + triangle[i][j + 1]);
+		// 	}
+		// }
 
-		//for (int i = 0; i < n; i++) {
-		//	if (cache[n - 1][i] > maxSum) {
-		//		maxSum = cache[n - 1][i];
-		//	}
-		//}
-		//printf("%d\n", maxSum);
+		// for (int i = 0; i < n; i++) {
+		// 	if (cache[n - 1][i] > maxSum) {
+		// 		maxSum = cache[n - 1][i];
+		// 	}
+		// }
+		// printf("%d\n", maxSum);
 	}
 }
